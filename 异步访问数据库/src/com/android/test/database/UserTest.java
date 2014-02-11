@@ -16,7 +16,7 @@ public class UserTest extends AndroidTestCase {
 	public void add() {
 		ContentResolver contentResolver = getContext().getContentResolver();
 		ContentValues values = new ContentValues();
-		values.put("name", "wanglei");
+		values.put("name", "wanglei3");
 		Uri url = Uri.parse("content://com.android.test.database.UserContentProvider/user");
 		Uri resultUri = contentResolver.insert(url, values);
 		Log.e("------------>>", resultUri.toString());
