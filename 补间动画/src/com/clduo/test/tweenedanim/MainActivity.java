@@ -35,9 +35,9 @@ public class MainActivity extends Activity {
 	/** 缩放
 	 * @param v */
 	public void click2(View v) {
-		ScaleAnimation scaleAnim = new ScaleAnimation(1.0f, 1.0f, 1.0f, 0, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-		scaleAnim.setDuration(1000);//指定动画播放的时间
-		scaleAnim.setRepeatCount(10);//动画重复播放次数
+		ScaleAnimation scaleAnim = new ScaleAnimation(1.0f, 0.8f, 1.0f, 0.8f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+		scaleAnim.setDuration(300);//指定动画播放的时间
+		scaleAnim.setRepeatCount(1);//动画重复播放次数
 		scaleAnim.setRepeatMode(Animation.REVERSE);//动画重复播放的模式 REVERSE:反着播放
 		iv.startAnimation(scaleAnim);
 	}
@@ -68,27 +68,27 @@ public class MainActivity extends Activity {
 		AnimationSet setAnim = new AnimationSet(false);
 		setAnim.setRepeatCount(3);
 		setAnim.setRepeatMode(Animation.REVERSE);
-		
+
 		TranslateAnimation translateAnim = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, 0.15f, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, -0.15f);
 		translateAnim.setDuration(100);//指定动画播放的时间
 		translateAnim.setRepeatCount(3);//动画重复播放次数
 		translateAnim.setRepeatMode(Animation.REVERSE);//动画重复播放的模式 REVERSE:反着播放
-		
+
 		TranslateAnimation translateAnim2 = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, -0.15f, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, -0.15f);
 		translateAnim2.setDuration(200);//指定动画播放的时间
 		translateAnim2.setRepeatCount(3);//动画重复播放次数
 		translateAnim2.setRepeatMode(Animation.REVERSE);//动画重复播放的模式 REVERSE:反着播放
-		
+
 		TranslateAnimation translateAnim3 = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, -0.15f, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, 0.15f);
 		translateAnim3.setDuration(120);//指定动画播放的时间
 		translateAnim3.setRepeatCount(3);//动画重复播放次数
 		translateAnim3.setRepeatMode(Animation.REVERSE);//动画重复播放的模式 REVERSE:反着播放
-		
+
 		TranslateAnimation translateAnim4 = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, 0.15f, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_PARENT, 0.15f);
 		translateAnim4.setDuration(60);//指定动画播放的时间
 		translateAnim4.setRepeatCount(3);//动画重复播放次数
 		translateAnim4.setRepeatMode(Animation.REVERSE);//动画重复播放的模式 REVERSE:反着播放
-		
+
 		setAnim.addAnimation(translateAnim2);
 		setAnim.addAnimation(translateAnim);
 		setAnim.addAnimation(translateAnim4);

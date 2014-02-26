@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示更多文本"
+            android:textColor="#555555"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#FF8A00"
+            android:textOff="隐藏详情"
+            android:textOn="显示全部" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="程序员应该有程序员的修养，那怕再累，再没时间，也要对自己的程序负责。我宁可要那种动作慢，技术一般，但有良好的写程序风格的程序员，也不要那种技术强、动作快的“搞破坏”的程序员。有句话叫“字如其人”，我想从程序上也能看出一个程序员的优劣。因为，程序是程序员的作品，作品的好坏直截关系到程序员的声誉和素质。而“修养”好的程序员一定能做出好的程序和软件。" />
+
+</LinearLayout>
