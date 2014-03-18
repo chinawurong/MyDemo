@@ -1,6 +1,7 @@
 package com.android.test.afinaldemo;
 
 import net.tsz.afinal.FinalHttp;
+import net.tsz.afinal.annotation.view.ViewInject;
 import net.tsz.afinal.http.AjaxCallBack;
 
 import org.jsoup.Jsoup;
@@ -22,6 +23,7 @@ import com.android.test.afinaldemo.utils.BitmapUtil;
 public class MainActivity extends Activity {
 	private LinearLayout content1, content2, content3;
 
+	private @ViewInject(id = R.id.content1)LinearLayout content1L;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
